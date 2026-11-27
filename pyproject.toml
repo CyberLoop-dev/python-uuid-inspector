@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-uuid-inspector"
+version = "1.0.0"
+description = "Inspect UUID versions, variants, timestamps, and duplicates"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.scripts]
+uuid-inspector = "uuid_inspector:main"
+
+[tool.setuptools]
+py-modules = ["uuid_inspector"]
